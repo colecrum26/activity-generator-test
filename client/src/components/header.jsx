@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Activities from './components/activities';
+import Activities from './activities';
 
 function Header(props) {
 
@@ -11,3 +10,5 @@ function Header(props) {
         </div>
     )
 }
+
+export default Header;
