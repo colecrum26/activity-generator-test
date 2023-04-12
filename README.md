@@ -1,6 +1,6 @@
 # Activity Generator
 
 ## Wireframing
-![website wireframe](/client/images/wireframe.png)
+![website wireframe](/images/wireframe.png)
 
 ## Development Process

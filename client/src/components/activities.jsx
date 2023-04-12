@@ -12,15 +12,15 @@ function Activities(props) {
 
   async function getActivities() {
     try {
-      let response = await fetch(url);
-      const result = await response.json();
-      console.log(result);
+      let res = await fetch(url);
+      let activityData = await res.json();
+      
     } catch (error) {
       console.error(error);
       throw new Error("Something went wrong - failed to fetch.");
     }
   }
-  let activities = getListOf(list, "activity");
+  let categories = getListOf(list, "categories");
 
   useEffect(() => {
     getActivities();
@@ -35,6 +35,7 @@ function Activities(props) {
           id="category"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
+          required
         ></select>
       </div>
       <div className="form-group">
