@@ -1,1 +1,5 @@
-# fp-skeleton
+# Activity Generator
+
+## Wireframing
+
+## Development Process
