@@ -5,7 +5,6 @@ const url = "http://www.boredapi.com/api/activity/";
 
 function Activities(props) {
   const [list, setList] = useState([]);
-  const [searchActivity, setsearchActivity] = useState("");
   const [category, setCategory] = useState("");
   const [parts, setParts] = useState("");
   const [price, setPrice] = useState("");
@@ -15,6 +14,7 @@ function Activities(props) {
     try {
       let response = await fetch(url);
       const result = await response.json();
+      console.log(result);
     } catch (error) {
       console.error(error);
       throw new Error("Something went wrong - failed to fetch.");
@@ -28,7 +28,7 @@ function Activities(props) {
 
   return (
     <form id="form">
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="activityType">Choose Category</label>
         <select
           name="category"
@@ -37,7 +37,7 @@ function Activities(props) {
           onChange={(e) => setCategory(e.target.value)}
         ></select>
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="activityType">Choose Number of Participants</label>
         <select
           name="parts"
@@ -46,7 +46,7 @@ function Activities(props) {
           onChange={(e) => setParts(e.target.value)}
         ></select>
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="activityType">Choose Price Level</label>
         <select
           name="price"
@@ -55,7 +55,7 @@ function Activities(props) {
           onChange={(e) => setPrice(e.target.value)}
         ></select>
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="activityType">Choose Accessibility Level</label>
         <select
           name="access"
