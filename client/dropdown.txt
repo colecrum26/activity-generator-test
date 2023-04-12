@@ -1,0 +1,39 @@
+<form id="form">
+      <div className="form-group">
+        <label htmlFor="activityType">Choose Category</label>
+        <select
+          name="category"
+          id="category"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          required
+        ></select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="activityType">Choose Number of Participants</label>
+        <select
+          name="parts"
+          id="parts"
+          value={parts}
+          onChange={(e) => setParts(e.target.value)}
+        ></select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="activityType">Choose Price Level</label>
+        <select
+          name="price"
+          id="price"
+          value={price}
+          onChange={(e) => setPrice(e.target.value)}
+        ></select>
+      </div>
+      <div className="form-group">
+        <label htmlFor="activityType">Choose Accessibility Level</label>
+        <select
+          name="access"
+          id="access"
+          value={access}
+          onChange={(e) => setAccess(e.target.value)}
+        ></select>
+      </div>
+    </form>
