@@ -1,6 +1,6 @@
 export async function getCategories() {
     try {
-      const url = `http://www.boredapi.com/api/activity/?type=${id}`;
+      const url = `http://www.boredapi.com/api/activity/?type=education`;
       let res = await fetch(url);
       let activityData = await res.json();
       console.log(activityData);
@@ -8,9 +8,5 @@ export async function getCategories() {
       console.error(error);
       throw new Error("Something went wrong - failed to fetch.");
     }
-
-  useEffect(() => {
-    getCategories();
-  }, []);
 }
 

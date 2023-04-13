@@ -4,6 +4,7 @@ import Participants from "./participants";
 
 function Activities(props) {
 
+  // conditional rendering for components
   return (
     <Router>
       <Routes>

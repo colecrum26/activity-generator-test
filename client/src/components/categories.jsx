@@ -5,16 +5,16 @@ function Categories() {
   
   return (
     <div>
-      <button type="submit" id="education">Education</button>
-      <button type="submit" id="recreational">Recreational</button>
-      <button type="submit" id="social">Social</button>
-      <button type="submit" id="diy">DIY</button>
-      <button type="submit" id="charity">Charity</button>
+      <button type="submit" id="education" onClick={getCategories}>Educational</button>
+      <button type="submit" id="recreational" onClick={getCategories}>Recreational</button>
+      <button type="submit" id="social" onClick={getCategories}>Social</button>
+      <button type="submit" id="diy" onClick={getCategories}>DIY</button>
+      <button type="submit" id="charity" onClick={getCategories}>Charity</button>
       <br />
-      <button type="submit" id="cooking">Cooking</button>
-      <button type="submit" id="relaxation">Relaxation</button>
-      <button type="submit" id="music">Music</button>
-      <button type="submit" id="busywork">Busywork</button>
+      <button type="submit" id="cooking" onClick={getCategories}>Cooking</button>
+      <button type="submit" id="relaxation" onClick={getCategories}>Relaxation</button>
+      <button type="submit" id="music" onClick={getCategories}>Music</button>
+      <button type="submit" id="busywork" onClick={getCategories}>Busywork</button>
     </div>
   )
 }
