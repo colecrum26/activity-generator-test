@@ -15,6 +15,10 @@ function Categories() {
   useEffect(() => {
     getCategories();
   }, []);
+
+  return (
+    <div></div>
+  )
 }
 
 export default Categories;

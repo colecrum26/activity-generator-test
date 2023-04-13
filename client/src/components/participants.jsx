@@ -1,6 +1,6 @@
 
 function Participants() {
-  async function getPartis() {
+  async function getParticipants() {
     try {
       const url = `http://www.boredapi.com/api/activity?participants=${partis}`;
       let res = await fetch(url);
@@ -12,6 +12,12 @@ function Participants() {
     }
   }
   useEffect(() => {
-    getPartis();
+    getParticipants();
   }, []);
+
+  return (
+    <div></div>
+  )
 }
+
+export default Participants;

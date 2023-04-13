@@ -1,27 +1,20 @@
-import { useState, useEffect } from "react";
-import { Categories } from "./categories";
-import { Participants } from "./partis";
+import React from "react";
+import Categories from "./categories";
+import { BrowserRouter as Router, NavLink, Routes, Route } from "react-router-dom";
+import Participants from "./participants";
 
 function Activities(props) {
-  const [list, setList] = useState([]);
-  const [category, setCategory] = useState("");
-  const [partis, setParts] = useState("");
-
-
-  
-
-  
-
-  
-
-//   let categories = getListOf(list, "categories")
 
   return (
-    <div></div>
+    <Router>
+      <Routes>
+        <Route path="/categories" element={<Categories />}></Route>
+        <Route path="/participants" element={<Participants />}></Route>
+      </Routes>
+      <button type="submit"><NavLink to="/categories">By Activity Category</NavLink></button>
+      <button type="submit"><NavLink to="/participants">By Number of Participants</NavLink></button>
+    </Router>
   );
 }
 
 export default Activities;
-
-
-"http://www.boredapi.com.api/activity?type=recreational?participants=1"
