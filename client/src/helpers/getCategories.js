@@ -1,7 +1,6 @@
 export async function getCategories() {
-  let activityData;
     try {
-      const url = `http://www.boredapi.com/api/activity/?type=recreational`;
+      const url = `http://www.boredapi.com/api/activity/?type=${id}`;
       let res = await fetch(url);
       let activityData = await res.json();
       console.log(activityData);
