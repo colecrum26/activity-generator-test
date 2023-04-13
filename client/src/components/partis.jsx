@@ -1,8 +1,8 @@
 
-function Price() {
-  async function getPrice() {
+function Participants() {
+  async function getPartis() {
     try {
-      const url = `http://www.boredapi.com/api/activity/?price=${price}`;
+      const url = `http://www.boredapi.com/api/activity?participants=${partis}`;
       let res = await fetch(url);
       let activityData = await res.json();
       console.log(activityData);
@@ -11,6 +11,7 @@ function Price() {
       throw new Error("Something went wrong - failed to fetch.");
     }
   }
+  useEffect(() => {
+    getPartis();
+  }, []);
 }
-
-export default Price;

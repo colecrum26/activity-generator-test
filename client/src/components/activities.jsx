@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { getListOf, Categories, Participants, Price, Accessibility } from "../helpers.js/activity.helpers";
+import { Categories } from "./categories";
+import { Participants } from "./partis";
 
 function Activities(props) {
   const [list, setList] = useState([]);
   const [category, setCategory] = useState("");
   const [partis, setParts] = useState("");
-  const [price, setPrice] = useState("");
-  const [access, setAccess] = useState("");
+
 
   
 

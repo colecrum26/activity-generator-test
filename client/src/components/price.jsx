@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 
-function Participants() {
-  async function getPartis() {
+function Price() {
+  async function getPrice() {
     try {
-      const url = `http://www.boredapi.com/api/activity?participants=${partis}`;
+      const url = `http://www.boredapi.com/api/activity/?price=${price}`;
       let res = await fetch(url);
       let activityData = await res.json();
       console.log(activityData);
@@ -11,4 +12,9 @@ function Participants() {
       throw new Error("Something went wrong - failed to fetch.");
     }
   }
+  useEffect(() => {
+    getPrice();
+  }, []);
 }
+
+export default Price;

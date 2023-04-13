@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 
 function Categories() {
   async function getCategories() {
@@ -11,6 +12,9 @@ function Categories() {
       throw new Error("Something went wrong - failed to fetch.");
     }
   }
+  useEffect(() => {
+    getCategories();
+  }, []);
 }
 
 export default Categories;
