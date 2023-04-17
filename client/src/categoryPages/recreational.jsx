@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-function Educational() {
+function Recreational() {
   const [data, setData] = useState({});
 
-  function getEduActivity() {
-    fetch("https://www.boredapi.com/api/activity/?type=education")
+  function getRecActivity() {
+    fetch("https://www.boredapi.com/api/activity/?type=recreational")
       .then((response) => {
         return response.json();
       })
@@ -19,12 +19,12 @@ function Educational() {
   }
 
   useEffect(() => {
-    getEduActivity();
+    getRecActivity();
   },[]);
 
   return (
     <div>
-      <h2>Educational Activity</h2>
+      <h2>Recreational Activity</h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>
@@ -35,4 +35,4 @@ function Educational() {
   );
 }
 
-export default Educational;
+export default Recreational;
