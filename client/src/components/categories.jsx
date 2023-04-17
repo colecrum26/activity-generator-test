@@ -1,19 +1,23 @@
-import getCategories from "../helpers/getCategories";
+import { NavLink, Routes, Route } from "react-router-dom";
+import Educational from "../categoryPages/educational";
 
 function Categories() {
   
   return (
     <div>
-      <button type="submit" id="education" onClick={getCategories}>Educational</button>
-      <button type="submit" id="recreational" onClick={getCategories}>Recreational</button>
-      <button type="submit" id="social" onClick={getCategories}>Social</button>
-      <button type="submit" id="diy" onClick={getCategories}>DIY</button>
-      <button type="submit" id="charity" onClick={getCategories}>Charity</button>
+      <button type="submit" id="educational"><NavLink to="/educational">Educational</NavLink></button>
+      <Routes>
+        <Route exact path="*/educational" element={<Educational />}></Route>
+      </Routes>
+      <button type="submit" id="recreational"><NavLink to="/recreational">Recreational</NavLink></button>
+      <button type="submit" id="social"><NavLink to="/social">Social</NavLink></button>
+      <button type="submit" id="diy"><NavLink to="/diy">DIY</NavLink></button>
+      <button type="submit" id="charity"><NavLink to="/charity">Charitable</NavLink></button>
       <br />
-      <button type="submit" id="cooking" onClick={getCategories}>Cooking</button>
-      <button type="submit" id="relaxation" onClick={getCategories}>Relaxation</button>
-      <button type="submit" id="music" onClick={getCategories}>Music</button>
-      <button type="submit" id="busywork" onClick={getCategories}>Busywork</button>
+      <button type="submit" id="cooking"><NavLink to="/cooking">Cooking</NavLink></button>
+      <button type="submit" id="relaxation"><NavLink to="/relaxation">Relaxation</NavLink></button>
+      <button type="submit" id="music"><NavLink to="/music">Musical</NavLink></button>
+      <button type="submit" id="busywork"><NavLink to="/busywork">Busywork</NavLink></button>
     </div>
   )
 }

@@ -6,7 +6,8 @@ function getCategories(props) {
 
   const getActivity = async () => {
     try {
-      const url = `http://www.boredapi.com/api/activity/?type=education`;
+      // let url = `https://www.boredapi.com/api/activity/?type=${type}`;
+      const url = "https://www.boredapi.com/api/activity/?type=education";
       const response = await fetch(url);
       const result = await response.json();
       console.log(result);

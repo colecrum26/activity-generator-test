@@ -1,12 +1,16 @@
 import React from "react";
-import Header from "./components/header";
+import Activities from "./components/activities";
 
 function App() {
 
   return (
-    <div className="App">
-      < Header />
-    </div>
+
+    <div>
+      <h1>Bored?</h1>
+      <h3>Let's find an activity for you.</h3>
+      <p>Click one of the following buttons to filter activities.</p>
+      <Activities />
+      </div>
   )
 }
 

@@ -7,21 +7,23 @@ function Activities(props) {
   // conditional rendering for components
   return (
     <Router>
-      <Routes>
-        <Route path="/categories" element={<Categories />}></Route>
-        <Route path="/participants" element={<Participants />}></Route>
-      </Routes>
       <div className="filterBtns" style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}>
-      <button type="submit" onClick={<Categories />}><NavLink to="/categories">Filter by Activity Category</NavLink></button>
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      <button type="submit"><NavLink to="/categories/">Filter by Activity Category</NavLink></button>
+      <Routes>
+      <Route path="/categories/*" element={<Categories />}></Route>
+      </Routes>
       <p>or</p>
-      <button type="submit" onClick={<Participants />}><NavLink to="/participants">Filter by Number of Participants</NavLink></button>
+      <button type="submit"><NavLink to="/participants">Filter by Number of Participants</NavLink></button>
+      <Routes>
+      <Route path="/participants" element={<Participants />}></Route>
+      </Routes>
       </div>
-    </Router>
+      </Router>
   );
 }
 
