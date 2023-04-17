@@ -1,7 +1,6 @@
-import { getCategories } from "../helpers/getCategories";
+import getCategories from "../helpers/getCategories";
 
 function Categories() {
-  
   
   return (
     <div>
