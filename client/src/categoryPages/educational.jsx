@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { eduIcon } from "../assets";
 
 function Educational() {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ function Educational() {
 
   return (
     <div>
-      <h2>Educational Activity</h2>
+      <h2>Educational Activity <img src={eduIcon} alt="books" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>
