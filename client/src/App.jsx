@@ -12,6 +12,7 @@ import {
   Musical,
   Busywork
 } from "./categoryPages/index";
+import FilterBtn from "./components/filterbtn";
 
 import {
   BrowserRouter as Router,
@@ -44,9 +45,7 @@ function App() {
           justifyContent: "center",
         }}
       >
-        <button type="button">
-          <NavLink to="/categories/">Filter by Activity Category</NavLink>
-        </button>
+        
       </div>
     </Router>
   );

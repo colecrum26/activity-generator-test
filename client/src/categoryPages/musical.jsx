@@ -4,7 +4,7 @@ import { musIcon } from "../assets";
 function Musical() {
   const [data, setData] = useState({});
 
-  function getRecActivity() {
+  function getActivity() {
     fetch("https://www.boredapi.com/api/activity/?type=music")
       .then((response) => {
         return response.json();
@@ -20,7 +20,7 @@ function Musical() {
   }
 
   useEffect(() => {
-    getRecActivity();
+    getActivity();
   },[]);
 
   return (
@@ -32,6 +32,7 @@ function Musical() {
       <p>Price is scaled 0-10, with 0 being free.</p>
       <h4>Accessibility: {data.accessibility*10}</h4>
       <p>Accessibility is scaled 0-10, with 0 being most accessible.</p>
+      <button onClick={getActivity}>Refresh</button>
       </div>
   );
 }
