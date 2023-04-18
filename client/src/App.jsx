@@ -25,7 +25,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Header />}></Route>
-        <Route exact path="/categories/*" element={<Categories />}></Route>
+        <Route exact path="/categories" element={<Categories />}></Route>
         <Route path="/educational" element={<Educational />}></Route>
         <Route path="/recreational" element={<Recreational />}></Route>
         <Route path="/social" element={<Social />}></Route>
@@ -44,9 +44,6 @@ function App() {
           justifyContent: "center",
         }}
       >
-        <button type="button">
-          <NavLink to="/">Home</NavLink>
-        </button>
         <button type="button">
           <NavLink to="/categories/">Filter by Activity Category</NavLink>
         </button>

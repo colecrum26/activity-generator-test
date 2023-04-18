@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-
 function Categories() {
   return (
     <div>
-      <h2>Activity Categories</h2>
+      <header id="categoryHeader">
+        <h2>Activity Categories</h2>
+        <h3>Let's find an activity for you.</h3>
+      </header>
       <button type="submit" id="educational">
         <NavLink to="/educational">Educational</NavLink>
       </button>
@@ -33,6 +35,11 @@ function Categories() {
       <button type="submit" id="busywork">
         <NavLink to="/busywork">Busywork</NavLink>
       </button>
+      <div id="homeBtn">
+        <button type="submit" id="home">
+          <NavLink to="/">Home</NavLink>
+        </button>
+      </div>
     </div>
   );
 }
