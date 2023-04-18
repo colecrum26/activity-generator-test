@@ -6,6 +6,7 @@ import Charitable from "./charitable";
 import Cooking from "./cooking";
 import Relaxation from "./relaxation";
 import Musical from "./musical";
+import Busywork from "./busywork,";
 
 export {
   Educational,
@@ -15,5 +16,6 @@ export {
   Charitable,
   Cooking,
   Relaxation,
-  Musical
+  Musical,
+  Busywork
 };

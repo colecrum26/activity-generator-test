@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-function Musical() {
+function Busywork() {
   const [data, setData] = useState({});
 
   function getRecActivity() {
-    fetch("https://www.boredapi.com/api/activity/?type=music")
+    fetch("https://www.boredapi.com/api/activity/?type=busywork")
       .then((response) => {
         return response.json();
       })
@@ -24,7 +24,7 @@ function Musical() {
 
   return (
     <div>
-      <h2>Musical Activity</h2>
+      <h2>Busywork Activity</h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>
@@ -35,4 +35,4 @@ function Musical() {
   );
 }
 
-export default Musical;
+export default Busywork;

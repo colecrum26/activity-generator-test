@@ -1,14 +1,24 @@
 import React from "react";
 import Header from "./components/header";
 import Categories from "./components/categories";
-import { Educational, Recreational, Social, DIY, Charitable, Cooking, Relaxation } from "./categoryPages/index";
+import {
+  Educational,
+  Recreational,
+  Social,
+  DIY,
+  Charitable,
+  Cooking,
+  Relaxation,
+  Musical,
+  Busywork
+} from "./categoryPages/index";
+
 import {
   BrowserRouter as Router,
   NavLink,
   Routes,
   Route,
 } from "react-router-dom";
-
 
 function App() {
   return (
@@ -21,6 +31,10 @@ function App() {
         <Route path="/social" element={<Social />}></Route>
         <Route path="/diy" element={<DIY />}></Route>
         <Route path="/charity" element={<Charitable />}></Route>
+        <Route path="/cooking" element={<Cooking />}></Route>
+        <Route path="/relaxation" element={<Relaxation />}></Route>
+        <Route path="/music" element={<Musical />}></Route>
+        <Route path="/busywork" element={<Busywork />}></Route>
       </Routes>
       <div
         style={{
