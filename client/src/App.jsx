@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header";
 import Categories from "./components/categories";
-import { Educational, Recreational, Social, DIY, Charitable } from "./categoryPages/index";
+import { Educational, Recreational, Social, DIY, Charitable, Cooking, Relaxation } from "./categoryPages/index";
 import {
   BrowserRouter as Router,
   NavLink,
