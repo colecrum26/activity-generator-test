@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { busyIcon } from "../assets";
 
 function Busywork() {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ function Busywork() {
 
   return (
     <div>
-      <h2>Busywork Activity</h2>
+      <h2>Busywork Activity <img src={busyIcon} className="icon" alt="clock" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>

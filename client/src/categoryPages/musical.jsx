@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { musIcon } from "../assets";
 
 function Musical() {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ function Musical() {
 
   return (
     <div>
-      <h2>Musical Activity</h2>
+      <h2>Musical Activity <img src={musIcon} className="icon" alt="headphones" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>

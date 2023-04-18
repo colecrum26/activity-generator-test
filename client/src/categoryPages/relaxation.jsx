@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { relIcon } from "../assets";
 
 function Relaxation() {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ function Relaxation() {
 
   return (
     <div>
-      <h2>Relaxation Activity</h2>
+      <h2>Relaxation Activity <img src={relIcon} className="icon" alt="battery" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>

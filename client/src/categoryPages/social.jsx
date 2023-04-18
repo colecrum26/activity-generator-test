@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { socIcon } from "../assets";
 
 function Social() {
   const [data, setData] = useState({});
@@ -24,7 +25,7 @@ function Social() {
 
   return (
     <div>
-      <h2>Social Activity</h2>
+      <h2>Social Activity <img src={socIcon} className="icon" alt="people" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>
