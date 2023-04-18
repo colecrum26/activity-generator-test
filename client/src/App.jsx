@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header";
 import Categories from "./components/categories";
-import { Educational, Recreational } from "./categoryPages/index";
+import { Educational, Recreational, Social } from "./categoryPages/index";
 import {
   BrowserRouter as Router,
   NavLink,
@@ -18,6 +18,7 @@ function App() {
         <Route exact path="/categories/*" element={<Categories />}></Route>
         <Route path="/educational" element={<Educational />}></Route>
         <Route path="/recreational" element={<Recreational />}></Route>
+        <Route path="/social" element={<Social />}></Route>
       </Routes>
       <div
         style={{
