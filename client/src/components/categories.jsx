@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { backIcon, eduIcon } from "../assets/index";
 
 function Categories() {
   return (
@@ -36,8 +37,8 @@ function Categories() {
         <NavLink to="/busywork">Busywork</NavLink>
       </button>
       <div id="homeBtn">
-        <button type="submit" id="home">
-          <NavLink to="/">Home</NavLink>
+        <button type="submit" id="home"> 
+          <NavLink to="/"><img src={backIcon} alt="" /></NavLink>
         </button>
       </div>
     </div>
