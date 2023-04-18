@@ -25,7 +25,7 @@ function DIY() {
 
   return (
     <div>
-      <h2>DIY Activity <img src={diyIcon} className="icon" alt="tools" /></h2>
+      <h2 id="activityHeader">DIY Activity <img src={diyIcon} className="icon" alt="tools" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>

@@ -9,7 +9,7 @@ function Header(props) {
       justifyContent: "center",
     }}>
       <h1>Bored?</h1>
-      <h3>Click the button to filter activities.</h3>
+      <h3>Click the button to get started.</h3>
       </div>
   );
 }
