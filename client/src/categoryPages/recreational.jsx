@@ -25,7 +25,7 @@ function Recreational() {
 
   return (
     <div>
-      <h2 id="activityHeader">Recreational Activity <img src={recIcon} className="icon" alt="bicycle" /></h2>
+      <h2 id="activityHeader">Recreational Activity <img src={recIcon} className="icon" alt="play" /></h2>
       <h4>Activity: {data.activity}</h4>
       <h4>Number of Participants: {data.participants}</h4>
       <h4>Price: {data.price*10}</h4>
