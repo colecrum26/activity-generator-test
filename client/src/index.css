@@ -66,8 +66,9 @@ a {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
+  margin: 0 2px 0 2px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -78,8 +79,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #f2df53;
-  color: #f2df53;
+  border-color: #d88f08;
 }
 
 label {
@@ -92,7 +92,7 @@ label {
     background-color: rgba(255, 255, 255, 0.87);
   }
   button:hover {
-    color: #f2df53;
+    color: #d88f08;
   }
   button {
     background-color: rgba(163, 163, 163, 0.87);

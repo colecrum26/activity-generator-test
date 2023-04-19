@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { forIcon } from "../assets";
-import "./filter.css";
 
 export default function FilterBtn() {
   return (
