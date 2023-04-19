@@ -16,11 +16,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #242424;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #f2df53;
 }
 
 body {
@@ -48,11 +48,15 @@ body {
   justify-content: center;
   padding: 6px;
 }
-#homeBtn {
+
+#topRow {
   display: flex;
   justify-content: center;
-  align-self: center;
-  margin: 8px 0 8px 0;
+  margin-left: -28px;
+}
+
+#AC {
+  margin-left: -12px;
 }
 
 #activityHeader {
@@ -72,7 +76,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #f2df53;
 }
 button:focus,
 button:focus-visible {
@@ -81,13 +85,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
   }
   a:hover {
-    color: #747bff;
+    color: #f2df53;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: rgba(163, 163, 163, 0.87);
   }
 }

@@ -15,7 +15,13 @@ function Categories() {
   return (
     <div id="categories">
       <header id="categoryHeader">
-        <h2>Activity Categories</h2>
+        <div id="topRow">
+      <button type="submit" id="home" 
+      style={{backgroundColor: "transparent", borderColor: "transparent"}}> 
+        <NavLink to="/"><img src={backIcon} alt="back button" /></NavLink>
+      </button>
+        <h2 id="AC">Activity Categories</h2>
+        </div>
         <div id="icons">
         <img src={eduIcon} alt="books" />
         <img src={recIcon} alt="bicycle" />
@@ -59,11 +65,6 @@ function Categories() {
       </button>
       <button type="submit" id="busywork">
         <NavLink to="/busywork">Busywork</NavLink>
-      </button>
-    </div>
-    <div id="homeBtn">
-      <button type="submit" id="home"> 
-        <NavLink to="/"><img src={backIcon} alt="back button" /></NavLink>
       </button>
     </div>
   </div>
