@@ -14,15 +14,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #242424;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #f2df53;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -61,7 +52,7 @@ body {
 
 #activityHeader {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 button {
@@ -71,12 +62,18 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  color: #242424;
   background-color: rgba(163, 163, 163, 0.87);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #f2df53;
+  color: #f2df53
+}
+
+label {
+  font-weight: 500;
 }
 
 
