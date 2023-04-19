@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { busyIcon } from "../assets";
+import { NavLink } from "react-router-dom";
+import { busyIcon, backIcon } from "../assets";
 
 function Busywork() {
   const [data, setData] = useState({});
@@ -32,6 +33,9 @@ function Busywork() {
       <p>Price is scaled 0-10, with 0 being free.</p>
       <h4>Accessibility: {data.accessibility*10}</h4>
       <p>Accessibility is scaled 0-10, with 0 being most accessible.</p>
+      <button type="submit" id="home" style={{backgroundColor: "transparent"}}> 
+        <NavLink to="/categories"><img src={backIcon} alt="back button" /></NavLink>
+      </button>
       <button onClick={getActivity}>Refresh</button>
       </div>
   );

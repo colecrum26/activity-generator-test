@@ -45,7 +45,6 @@ function App() {
           justifyContent: "center",
         }}
       >
-        
       </div>
     </Router>
   );
