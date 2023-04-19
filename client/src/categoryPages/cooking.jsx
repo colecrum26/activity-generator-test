@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { cookIcon, backIcon} from "../assets";
+import { cookIcon, backIcon, refrIcon } from "../assets";
 
 function Cooking() {
   const [data, setData] = useState({});
@@ -36,7 +36,7 @@ function Cooking() {
       <button type="submit" id="back" style={{backgroundColor: "transparent", borderColor: "transparent"}}> 
         <NavLink to="/categories"><img src={backIcon} alt="back button" /></NavLink>
       </button>
-      <button onClick={getActivity}>Refresh</button>
+      <button onClick={getActivity} style={{backgroundColor: "transparent", borderColor: "transparent"}}><img src={refrIcon} alt="refresh" /></button>
       </div>
   );
 }
