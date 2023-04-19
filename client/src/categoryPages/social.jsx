@@ -47,7 +47,9 @@ function Social() {
       <h4>Accessibility: {data.accessibility * 10}</h4>
       <p>Accessibility is scaled 0-10, with 0 being most accessible.</p>
       <div id="brBtns">
-        <label htmlFor="refresh">Don't want to do this one? Try another activity!</label>
+        <label htmlFor="refresh">
+          Don't want to do this one? Try another activity!
+        </label>
         <button
           className="refresh"
           onClick={getActivity}

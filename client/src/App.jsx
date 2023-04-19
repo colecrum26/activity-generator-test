@@ -12,11 +12,10 @@ import {
   Musical,
   Busywork
 } from "./categoryPages/index";
-import FilterBtn from "./components/filterbtn";
 
 import {
-  BrowserRouter as Router,
-  NavLink,
+  BrowserRouter as 
+  Router,
   Routes,
   Route,
 } from "react-router-dom";
