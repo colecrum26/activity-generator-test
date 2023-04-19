@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { socIcon, backIcon } from "../assets";
+import { socIcon, backIcon, refrIcon } from "../assets";
 
 function Social() {
   const [data, setData] = useState({});
@@ -33,10 +33,12 @@ function Social() {
       <p>Price is scaled 0-10, with 0 being free.</p>
       <h4>Accessibility: {data.accessibility*10}</h4>
       <p>Accessibility is scaled 0-10, with 0 being most accessible.</p>
+      <div id="brBtns">
       <button type="submit" id="back" style={{backgroundColor: "transparent", borderColor: "transparent"}}> 
         <NavLink to="/categories"><img src={backIcon} alt="back button" /></NavLink>
       </button>
-      <button onClick={getActivity}>Refresh</button>
+      <button onClick={getActivity} style={{backgroundColor: "transparent", borderColor: "transparent"}}><img src={refrIcon} alt="refresh" /></button>
+      </div>
       </div>
   );
 }

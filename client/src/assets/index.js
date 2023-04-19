@@ -8,6 +8,7 @@ import cookIcon from "./cooking.svg";
 import relIcon from "./relax.svg";
 import musIcon from "./music.svg";
 import busyIcon from "./busy.svg";
+import refrIcon from "./refresh.svg"
 
 export {
   backIcon,
@@ -20,4 +21,5 @@ export {
   relIcon,
   musIcon,
   busyIcon,
+  refrIcon
 };
